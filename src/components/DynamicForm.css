@@ -1,0 +1,196 @@
+/* Overall container */
+.dynamic-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form type selector */
+  .form-type-selector {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Form styles */
+  .dynamic-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input,
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 15px;
+  }
+  
+  .progress-bar-fill {
+    background: #4caf50;
+    height: 100%;
+    transition: width 0.3s;
+  }
+  
+  /* Buttons */
+  .submit-btn {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #0056b3;
+  }
+  
+  .edit-btn {
+    padding: 5px 10px;
+    background: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-btn:hover {
+    background: #e0a800;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  
+  /* Feedback message */
+  .feedback-message {
+    text-align: center;
+    margin-top: 10px;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  /* Submitted data table */
+  .submitted-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .submitted-data-table th,
+  .submitted-data-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .submitted-data-table th {
+    background: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .submitted-data-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .submitted-data-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  .submitted-data-table td {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .dynamic-form-container {
+      padding: 15px;
+    }
+  
+    input,
+    select {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .submit-btn,
+    .edit-btn,
+    .delete-btn {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
